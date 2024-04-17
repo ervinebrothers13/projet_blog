@@ -53,7 +53,7 @@ class FrontController
         exit;
     }
 
-    // Exemple validation à améliorer
+    // Vérification d'un commentaire
     private function validateCommentData($articleId, $pseudo, $content) {
         return !empty($pseudo) && !empty($content) && !empty($articleId) && $_SERVER['REQUEST_METHOD'] === 'POST';
     }
